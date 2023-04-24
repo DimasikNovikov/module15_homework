@@ -1,0 +1,80 @@
+:root {
+    --my-color: skyblue;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    padding: 50px;
+    
+}   
+
+.chat {
+    display: inline-block;
+    box-shadow: 3px 3px 8px black;
+    padding: 8px;
+    
+    
+    
+}
+
+.control {
+    display:inline-block;
+    margin-bottom: 10px;
+}
+
+.control__enterTextMessage {
+    width: 250px;
+    margin-right: 5px;
+    padding: 5px 2px;
+    border:5px solid var(--my-color);
+}
+
+.control__enterTextMessage::placeholder{
+    color: rgb(190, 190, 190);
+}
+
+.control__enterTextMessage:focus {
+    outline: none;
+}
+
+button {
+    border: 0;
+    background-color: var(--my-color);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.fieldOfMessanges {
+    height: 300px;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    border:5px solid var(--my-color);
+    overflow-y: auto;
+    
+}
+
+.fieldOfMessanges::-webkit-scrollbar {
+    width: 0;
+}
+
+.message {
+    font-weight: bold;
+    border: 5px solid var(--my-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 170px;
+    word-wrap: break-word;
+}
+
+.messageFromServer {
+   align-self: flex-start;
+}
+
+.messageFromUser {
+   align-self: flex-end;
+}
